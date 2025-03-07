@@ -1,0 +1,8 @@
+# output subfolders
+outputs/**
+# scan resume file
+resume.cfg
+# runner log file
+runner.log
+# email log file
+email.log
