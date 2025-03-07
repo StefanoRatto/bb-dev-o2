@@ -1,0 +1,12 @@
+BB-DEV-O2 Notification
+=======================
+Timestamp: {{timestamp}}
+Workflow: {{workflow}}
+Target: {{target}}
+Severity: {{severity}}
+=======================
+
+{{findings}}
+
+=======================
+This is an automated message from BB-DEV-O2. 

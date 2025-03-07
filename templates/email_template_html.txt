@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+        .content {
+            padding: 0 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .severity-high {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .severity-medium {
+            color: #f0ad4e;
+            font-weight: bold;
+        }
+        .severity-low {
+            color: #5bc0de;
+        }
+        .findings {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin: 20px 0;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>BB-DEV-O2 Notification</h2>
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Timestamp</th>
+                    <td>{{timestamp}}</td>
+                </tr>
+                <tr>
+                    <th>Workflow</th>
+                    <td>{{workflow}}</td>
+                </tr>
+                <tr>
+                    <th>Target</th>
+                    <td>{{target}}</td>
+                </tr>
+                <tr>
+                    <th>Severity</th>
+                    <td class="severity-{{severity}}">{{severity}}</td>
+                </tr>
+            </table>
+            
+            <h3>Findings</h3>
+            <div class="findings">
+{{findings}}
+            </div>
+        </div>
+        <div class="footer">
+            This is an automated message from BB-DEV-O2.<br>
+            &copy; 2024 Team7
+        </div>
+    </div>
+</body>
+</html> 
